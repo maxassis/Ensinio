@@ -56,6 +56,7 @@ export const WrapperButtons = styled.div`
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-top: 4px;
 `;
 
 export const FirstButton = styled.button`
