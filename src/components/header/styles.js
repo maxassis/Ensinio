@@ -71,9 +71,22 @@ export const Button = styled.button`
 export const WrapperOption1 = styled.div`
   gap: 10.5px;
   display: flex;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 105%;
+  color: #ffffff;
 `;
 
 export const WrapperOption2 = styled.div`
   display: flex;
   gap: 8px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 105%;
+  color: #ffffff;
 `;
