@@ -33,30 +33,15 @@ function BoxDescription() {
           </S.Detail2>
         </S.WrapperDetails>
         <S.WrapperCards>
-          <S.Card>
-            <S.Img src={Playlist} alt="playlist" />
-            <S.Title>Trilhas de etapas</S.Title>
-            <p>
-              Crie planos de estudos especificando aulas e/ou cursos e definindo
-              a ordem que seus alunos devem estudar.
-            </p>
-          </S.Card>
-          <S.Card>
-            <S.Img src={Playlist} alt="playlist" />
-            <S.Title>Trilhas de etapas</S.Title>
-            <p>
-              Crie planos de estudos especificando aulas e/ou cursos e definindo
-              a ordem que seus alunos devem estudar.
-            </p>
-          </S.Card>
-          <S.Card>
-            <S.Img src={Playlist} alt="playlist" />
-            <S.Title>Trilhas de etapas</S.Title>
-            <p>
-              Crie planos de estudos especificando aulas e/ou cursos e definindo
-              a ordem que seus alunos devem estudar.
-            </p>
-          </S.Card>
+          {data.map(function (dt) {
+            return (
+              <S.Card key={dt.id}>
+                <S.Img src={Playlist} alt="playlist" />
+                <S.Title>{dt.title}</S.Title>
+                <p>{dt.description}</p>
+              </S.Card>
+            );
+          })}
         </S.WrapperCards>
         <S.Footer>
           <div>
