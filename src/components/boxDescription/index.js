@@ -4,8 +4,22 @@ import { Container } from "../container/index";
 import Playlist from "../../assets/imgs/playlists.svg";
 import Rocket from "../../assets/imgs/rocket.svg";
 import Arrow from "../../assets/imgs/arrow.svg";
+import api from "../../services/api";
 
 function BoxDescription() {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    api
+      .get("items")
+      .then((response) => setData(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
+  }, []);
+
+  console.log(data);
+
   return (
     <S.Wrapper>
       <Container>
