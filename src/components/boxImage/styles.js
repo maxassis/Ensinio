@@ -51,6 +51,10 @@ export const Text2 = styled.p`
   line-height: 48px;
   letter-spacing: -0.03em;
   color: #ffffff;
+
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `;
 
 export const Text3 = styled.p`
@@ -61,6 +65,10 @@ export const Text3 = styled.p`
   line-height: 24px;
   color: #ffffff;
   opacity: 0.9;
+
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `;
 
 export const WrapperButtons = styled.div`
@@ -99,4 +107,34 @@ export const WatchVideo = styled.a`
   font-size: 16px;
   line-height: 125%;
   color: #ffffff;
+`;
+
+export const Text2Hide = styled.p`
+  display: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+
+  ${media.lessThan("large")`
+    display: block;
+  `}
+`;
+
+export const Text3Hide = styled.p`
+  display: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.9;
+
+  ${media.lessThan("large")`
+    display: block;
+  `}
 `;
