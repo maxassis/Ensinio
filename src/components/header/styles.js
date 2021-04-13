@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import media from "styled-media-query";
+import { MenuAltRight } from "@styled-icons/boxicons-regular/MenuAltRight";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -8,8 +10,15 @@ export const Wrapper = styled.div`
 
 export const WrapperMenu = styled.div`
   display: grid;
-  grid-template-columns: 400px 500px 400px;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 88px;
+
+  ${media.lessThan("large")`
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    
+  `}
 `;
 
 export const Logo = styled.div`
@@ -36,6 +45,15 @@ export const Options = styled.ul`
     color: white;
     opacity: 0.9;
   }
+
+  @media (max-width: 1229px) {
+    gap: 20px;
+  }
+
+  ${media.lessThan("large")`
+    display: none;
+    
+  `}
 `;
 
 export const Login = styled.div`
@@ -46,6 +64,14 @@ export const Login = styled.div`
   img {
     width: 15px;
   }
+
+  @media (max-width: 1229px) {
+    gap: 20px;
+  }
+
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `;
 
 export const Button = styled.button`
@@ -89,4 +115,15 @@ export const WrapperOption2 = styled.div`
   font-size: 15px;
   line-height: 105%;
   color: #ffffff;
+`;
+
+export const MenuIcon = styled(MenuAltRight)`
+  width: 40px;
+  color: #ffffff;
+  align-self: center;
+  display: none;
+
+  ${media.lessThan("large")`
+    display: grid;
+  `}
 `;

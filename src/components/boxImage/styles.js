@@ -1,11 +1,10 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Wrapper = styled.div`
   width: 100%;
   height: 700px;
-  // background: linear-gradient(259.95deg, #5f41d9 2.25%, #41b5d9 100.27%);
   background: linear-gradient(259.95deg, #41b5d9 2.25%, #5f41d9 100.27%);
-  // transform: matrix(-1, 0, 0, 1, 0, 0);
 `;
 
 export const WrapperInformations = styled.div`
@@ -13,6 +12,10 @@ export const WrapperInformations = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+
+  ${media.lessThan("large")`
+  grid-template-columns: 1fr;
+  `}
 `;
 
 export const WrapperTexts = styled.div`
@@ -25,6 +28,10 @@ export const WrapperTexts = styled.div`
 export const WrapperImage = styled.div`
   display: flex;
   align-items: flex-end;
+
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `;
 
 export const Text1 = styled.h1`

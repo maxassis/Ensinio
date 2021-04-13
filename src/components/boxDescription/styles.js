@@ -50,13 +50,19 @@ export const Detail2 = styled.div`
 `;
 
 export const WrapperCards = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 235px;
+  display: flex;
+  height: 235px;
+  justify-content: space-around;
+  gap: 152px;
+
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 235px;
   border-bottom: 1px solid #e7e7e9;
 `;
 
 export const Card = styled.div`
+  // width: 405px;
   width: 304px;
   height: 235px;
   display: flex;

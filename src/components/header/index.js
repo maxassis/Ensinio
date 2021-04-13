@@ -33,6 +33,7 @@ const Header = () => {
               PT <img src={Polygon} alt="poligon" />
             </S.WrapperOption2>
           </S.Login>
+          <S.MenuIcon />
         </S.WrapperMenu>
       </Container>
     </S.Wrapper>
