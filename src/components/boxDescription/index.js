@@ -4,6 +4,8 @@ import { Container } from "../container/index";
 import Playlist from "../../assets/imgs/playlists.svg";
 import Rocket from "../../assets/imgs/rocket.svg";
 import Arrow from "../../assets/imgs/arrow.svg";
+import Folder from "../../assets/imgs/folder.svg";
+import Trilhas from "../../assets/imgs/trilhas.svg";
 import api from "../../services/api";
 
 function BoxDescription() {
@@ -36,7 +38,10 @@ function BoxDescription() {
           {data.map(function (dt) {
             return (
               <S.Card key={dt.id}>
-                <S.Img src={Playlist} alt="playlist" />
+                {dt.id === 1 && <S.Img src={Trilhas} alt="trilhas" />}
+                {dt.id === 2 && <S.Img src={Playlist} alt="playlist" />}
+                {dt.id === 3 && <S.Img src={Folder} alt="folder" />}
+
                 <S.Title>{dt.title}</S.Title>
                 <p>{dt.description}</p>
               </S.Card>
