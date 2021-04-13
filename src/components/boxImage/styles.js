@@ -23,6 +23,10 @@ export const WrapperTexts = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 44px;
+
+  ${media.lessThan("large")`
+  align-items: center;
+  `}
 `;
 
 export const WrapperImage = styled.div`

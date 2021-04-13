@@ -1,9 +1,14 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const Wrapper = styled.div`
   width: 100%;
   height: 661px;
   padding-top: 107px;
+
+  ${media.lessThan("medium")`
+  padding-top: 58px;
+  `}
 `;
 
 export const WrapperDetails = styled.div`
@@ -11,6 +16,10 @@ export const WrapperDetails = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 69px;
+
+  ${media.lessThan("medium")`
+    margin-bottom:48px;
+  `}
 `;
 
 export const Detail = styled.div`
@@ -35,6 +44,16 @@ export const Detail = styled.div`
     line-height: 150%;
     color: #423d51;
   }
+
+  ${media.lessThan("large")`
+  justify-content: center;
+  `}
+
+  ${media.lessThan("large")`
+  h1:nth-child(2) {
+    display: none;
+  }
+  `}
 `;
 
 export const Detail2 = styled.div`
@@ -47,6 +66,13 @@ export const Detail2 = styled.div`
     letter-spacing: 0.005em;
     color: #130c25;
   }
+
+  ${media.lessThan("large")`
+    h1{
+      font-size: 28px;
+      text-align: center;
+    }
+  `}
 `;
 
 export const WrapperCards = styled.div`
@@ -54,15 +80,21 @@ export const WrapperCards = styled.div`
   height: 235px;
   justify-content: space-around;
   gap: 152px;
-
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // grid-template-rows: 235px;
   border-bottom: 1px solid #e7e7e9;
+
+  @media (max-width: 878px) {
+    height: 605px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  ${media.lessThan("large")`
+  padding-bottom: 40px; 
+  `}
 `;
 
 export const Card = styled.div`
-  // width: 405px;
   width: 304px;
   height: 235px;
   display: flex;
@@ -95,11 +127,39 @@ export const Footer = styled.div`
     display: flex;
     align-items: center;
     gap: 38px;
+    cursor: pointer;
   }
 
   div:nth-child(2) {
     display: flex;
     align-items: center;
     gap: 32px;
+    cursor: pointer;
   }
+
+  @media (max-width: 878px) {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-bottom: 36px;
+  }
+`;
+
+export const Recursos = styled.div`
+  display: none;
+
+  h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #423d51;
+    margin-bottom: 46px;
+  }
+
+  ${media.lessThan("large")`
+  display: flex;
+  justify-content: center;
+  `}
 `;

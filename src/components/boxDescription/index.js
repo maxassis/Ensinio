@@ -34,6 +34,9 @@ function BoxDescription() {
             <h1>Queremos que o aluno se sinta confortável enquanto aprende</h1>
           </S.Detail2>
         </S.WrapperDetails>
+        <S.Recursos>
+          <h1>Conheça alguns dos nossos recursos ⚡️</h1>
+        </S.Recursos>
         <S.WrapperCards>
           {data.map(function (dt) {
             return (
