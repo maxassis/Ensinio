@@ -27,7 +27,7 @@ export const Detail = styled.div`
   justify-content: space-between;
 
   h1:first-child {
-    font-family: Degular;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -37,7 +37,7 @@ export const Detail = styled.div`
   }
 
   h1:nth-child(2) {
-    font-family: Inter;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -58,7 +58,7 @@ export const Detail = styled.div`
 
 export const Detail2 = styled.div`
   h1 {
-    font-family: Degular;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
@@ -112,7 +112,7 @@ export const Img = styled.img`
 `;
 
 export const Title = styled.h1`
-  font-family: Degular;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -167,4 +167,9 @@ export const Recursos = styled.div`
   display: flex;
   justify-content: center;
   `}
+`;
+
+export const Line = styled.img`
+  margin-bottom: 5px;
+  margin-right: 16px;
 `;

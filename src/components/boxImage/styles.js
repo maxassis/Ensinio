@@ -47,8 +47,16 @@ export const WrapperImage = styled.div`
 `;
 
 export const Text1 = styled.h1`
-  color: white;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
+  line-height: 105%;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.75;
 `;
 
 export const Text2 = styled.p`

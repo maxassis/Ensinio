@@ -6,6 +6,7 @@ import Rocket from "../../assets/imgs/rocket.svg";
 import Arrow from "../../assets/imgs/arrow.svg";
 import Folder from "../../assets/imgs/folder.svg";
 import Trilhas from "../../assets/imgs/trilhas.svg";
+import LineHorizontal from "../../assets/imgs/lineHorizontal.svg";
 import api from "../../services/api";
 
 function BoxDescription() {
@@ -27,7 +28,10 @@ function BoxDescription() {
       <Container>
         <S.WrapperDetails>
           <S.Detail>
-            <h1>PENSAMOS EM CADA DETALHE</h1>
+            <h1>
+              <S.Line src={LineHorizontal} alt="line" /> PENSAMOS EM CADA
+              DETALHE
+            </h1>
             <h1>Conheça alguns dos nossos recursos ⚡️</h1>
           </S.Detail>
           <S.Detail2>
