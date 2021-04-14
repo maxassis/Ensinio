@@ -5,6 +5,10 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 700px;
   background: linear-gradient(259.95deg, #41b5d9 2.25%, #5f41d9 100.27%);
+
+  ${media.lessThan("small")`
+  height: 760px;
+  `}
 `;
 
 export const WrapperInformations = styled.div`
@@ -12,6 +16,10 @@ export const WrapperInformations = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+
+  ${media.lessThan("small")`
+  padding-top: 35px;
+  `}
 
   ${media.lessThan("large")`
   grid-template-columns: 1fr;
@@ -76,6 +84,10 @@ export const WrapperButtons = styled.div`
   align-items: center;
   gap: 40px;
   margin-top: 4px;
+
+  ${media.lessThan("large")`
+    flex-direction: column;
+  `}
 `;
 
 export const FirstButton = styled.button`
@@ -114,7 +126,7 @@ export const Text2Hide = styled.p`
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 44px;
+  font-size: 43px;
   line-height: 48px;
   letter-spacing: -0.03em;
   color: #ffffff;

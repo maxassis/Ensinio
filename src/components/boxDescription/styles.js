@@ -67,6 +67,11 @@ export const Detail2 = styled.div`
     color: #130c25;
   }
 
+  ${media.lessThan("small")`
+  line-height: 113%;
+  font-size: 25px;
+  `}
+
   ${media.lessThan("large")`
     h1{
       font-size: 28px;

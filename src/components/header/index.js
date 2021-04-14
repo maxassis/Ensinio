@@ -4,6 +4,7 @@ import * as S from "./styles";
 import Logo from "../../assets/imgs/logo.svg";
 import Polygon from "../../assets/imgs/Polygon.svg";
 import Group from "../../assets/imgs/Group.svg";
+import Line from "../../assets/imgs/Line.svg";
 
 const Header = () => {
   return (
@@ -21,6 +22,9 @@ const Header = () => {
             <li>Academy</li>
             <li>Blog</li>
             <li>Contato</li>
+            <li>
+              <S.Img src={Line} alt="line" />
+            </li>
           </S.Options>
           <S.Login>
             <S.WrapperOption1>

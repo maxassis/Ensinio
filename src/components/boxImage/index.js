@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./styles";
 import Header from "../header/index";
 import { Container } from "../container";
-import Photo from "../../assets/imgs/photo.svg";
+import Photo from "../../assets/imgs/photo.png";
 import Play from "../../assets/imgs/Play.svg";
 
 const BoxImage = () => {
