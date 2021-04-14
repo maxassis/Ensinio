@@ -11,6 +11,15 @@ const wrapperModifiers = {
     pointer-events: none;
     transform: translateY(-2rem);
   `,
+  PT: () => css`
+    visibility: visible;
+  `,
+  EN: () => css`
+    visibility: visible;
+  `,
+  ES: () => css`
+    visibility: visible;
+  `,
 };
 
 export const Wrapper = styled.div`
@@ -89,17 +98,40 @@ export const Flag = styled.div`
   }
 `;
 
+export const Icon = styled.img`
+  margin-left: 27px;
+  visibility: hidden;
+`;
+
 export const WrapperCountriesBr = styled.div`
-  display: flex;
-  gap: 10px;
+  ${({ country }) => css`
+    display: flex;
+    gap: 10px;
+
+    ${Icon} {
+      ${country === "PT" && wrapperModifiers.PT()}
+    }
+  `}
 `;
 
 export const WrapperCountriesUsa = styled.div`
-  display: flex;
-  gap: 10px;
+  ${({ country }) => css`
+    display: flex;
+    gap: 10px;
+
+    ${Icon} {
+      ${country === "EN" && wrapperModifiers.EN()}
+    }
+  `}
 `;
 
 export const WrapperCountriesSpa = styled.div`
-  display: flex;
-  gap: 10px;
+  ${({ country }) => css`
+    display: flex;
+    gap: 10px;
+
+    ${Icon} {
+      ${country === "ES" && wrapperModifiers.ES()}
+    }
+  `}
 `;
