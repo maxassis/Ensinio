@@ -5,6 +5,8 @@ import Logo from "../../assets/imgs/logo.svg";
 import Polygon from "../../assets/imgs/Polygon.svg";
 import Group from "../../assets/imgs/Group.svg";
 import Line from "../../assets/imgs/Line.svg";
+import Dropdown from "../dropDownSolutions/index";
+import DropDownLang from "../dropDownLang";
 
 const Header = () => {
   return (
@@ -16,7 +18,8 @@ const Header = () => {
           </S.Logo>
           <S.Options>
             <li>
-              Soluções <img src={Polygon} alt="menu" />
+              {/*  Soluções <img src={Polygon} alt="menu" /> */}
+              <Dropdown />
             </li>
             <li>Preços</li>
             <li>Academy</li>
@@ -34,7 +37,8 @@ const Header = () => {
               <S.Button>Começar Agora</S.Button>
             </div>
             <S.WrapperOption2>
-              PT <img src={Polygon} alt="poligon" />
+              {/*   PT <img src={Polygon} alt="poligon" /> */}
+              <DropDownLang />
             </S.WrapperOption2>
           </S.Login>
           <S.MenuIcon />

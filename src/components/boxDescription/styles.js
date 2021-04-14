@@ -3,7 +3,8 @@ import media from "styled-media-query";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 661px;
+  // height: 661px;
+  height: 550px;
   padding-top: 107px;
 
   ${media.lessThan("medium")`
@@ -172,4 +173,8 @@ export const Recursos = styled.div`
 export const Line = styled.img`
   margin-bottom: 5px;
   margin-right: 16px;
+
+  ${media.lessThan("medium")`
+  display: none;
+  `}
 `;

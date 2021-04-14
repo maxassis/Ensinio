@@ -244,6 +244,7 @@ legend {
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: content-box;
   }
 
   body {

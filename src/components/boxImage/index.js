@@ -16,18 +16,16 @@ const BoxImage = () => {
             <S.Text2>
               Sua escola online <br /> poderosa e lucrativa
             </S.Text2>
-            <S.Text2Hide>
-              Sua escola online <br /> poderosa e lucrativa
-            </S.Text2Hide>
+            <S.Text2Hide>Sua escola online poderosa e lucrativa</S.Text2Hide>
             <S.Text3>
-              Tenha sua própria escola online 100% white label com <br /> rede
-              social, gamificação, clube de assinaturas,
-              <br /> ecommerce e sistema EAD completo.
+              Tenha sua própria escola online 100% white label com rede social,
+              gamificação, clube de assinaturas, ecommerce e sistema EAD
+              completo.
             </S.Text3>
             <S.Text3Hide>
-              Tenha sua própria escola online 100% white label com <br /> rede
-              social, gamificação, clube de assinaturas,
-              <br /> ecommerce e sistema EAD completo.
+              Tenha sua própria escola online 100% white label com rede social,
+              gamificação, clube de assinaturas, ecommerce e sistema EAD
+              completo.
             </S.Text3Hide>
             <S.WrapperButtons>
               <S.FirstButton>Começar agora</S.FirstButton>
