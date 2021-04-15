@@ -118,6 +118,13 @@ export const FirstButton = styled.button`
   line-height: 125%;
   color: #130c25;
   outline: none;
+
+  :hover {
+    background-color: #333333;
+    color: white;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.05s;
+  }
 `;
 
 export const WatchVideo = styled.a`
@@ -131,6 +138,16 @@ export const WatchVideo = styled.a`
   font-size: 1rem;
   line-height: 125%;
   color: #ffffff;
+
+  span {
+    :hover {
+      color: #333333;
+      transition: all 0.5s ease-in;
+      transition-delay: 0.05s;
+      border-color: #333333;
+      cursor: pointer;
+    }
+  }
 `;
 
 export const Text2Hide = styled.p`

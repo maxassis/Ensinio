@@ -34,7 +34,7 @@ const BoxImage = () => {
               <S.FirstButton>Começar agora</S.FirstButton>
               <S.WatchVideo href="#">
                 <img src={Play} alt="play" />
-                Ver Vídeo
+                <span> Ver Vídeo </span>
               </S.WatchVideo>
             </S.WrapperButtons>
           </S.WrapperTexts>

@@ -15,7 +15,7 @@ function DropDownLang() {
       <S.Wrapper isOpen={isOpen}>
         <S.Title onClick={() => setIsOpen(!isOpen)}>
           <div>
-            {country} <img src={Polygon} alt="poligon" />
+            <span>{country}</span> <img src={Polygon} alt="poligon" />
           </div>
         </S.Title>
 

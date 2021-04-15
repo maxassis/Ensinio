@@ -44,6 +44,14 @@ export const Options = styled.ul`
     line-height: 105%;
     color: white;
     opacity: 0.9;
+
+    :hover {
+      color: #333333;
+      transition: all 0.5s ease-in;
+      transition-delay: 0.05s;
+      border-color: #333333;
+      cursor: pointer;
+    }
   }
 
   @media (max-width: 76.8125rem) {
@@ -92,6 +100,13 @@ export const Button = styled.button`
   font-size: 0.9375rem;
   line-height: 105%;
   color: #ffffff;
+
+  :hover {
+    color: #333333;
+    transition: all 0.5s ease-in;
+    transition-delay: 0.05s;
+    border-color: #333333;
+  }
 `;
 
 export const WrapperOption1 = styled.div`
@@ -103,6 +118,16 @@ export const WrapperOption1 = styled.div`
   font-size: 0.9375rem;
   line-height: 105%;
   color: #ffffff;
+
+  span {
+    :hover {
+      color: #333333;
+      transition: all 0.5s ease-in;
+      transition-delay: 0.05s;
+      border-color: #333333;
+      cursor: pointer;
+    }
+  }
 `;
 
 export const WrapperOption2 = styled.div`

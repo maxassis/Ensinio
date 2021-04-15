@@ -48,6 +48,17 @@ export const Title = styled.div`
     line-height: 105%;
     color: #ffffff;
   }
+
+  span{
+    :hover {
+      color: #333333;
+      transition: all 0.5s ease-in;
+      transition-delay: 0.05s;
+      border-color: #333333;
+      cursor: pointer;
+  }
+
+
 `;
 
 export const Content = styled.div`

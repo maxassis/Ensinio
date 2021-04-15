@@ -33,7 +33,7 @@ const Header = () => {
           </S.Options>
           <S.Login>
             <S.WrapperOption1>
-              <img src={Group} alt="group" /> Entrar
+              <img src={Group} alt="group" /> <span>Entrar</span>
             </S.WrapperOption1>
             <div>
               <S.Button>Começar Agora</S.Button>
