@@ -1,6 +1,6 @@
 # Ensinio
 
-LandPage da plataforma online de criação de cursos [Ensinio](https://ensinio.com/pt-br/), desenvolvida utilizando Css3,  html, Javascript e React. 
+LandPage da plataforma online de criação de cursos [Ensinio](https://ensinio.com/pt-br/), desenvolvida utilizando Css,  html, Javascript e React. 
 
 
 ## Tecnologias principais
@@ -9,8 +9,7 @@ LandPage da plataforma online de criação de cursos [Ensinio](https://ensinio.c
 
 ## Bibliotecas
 
-Styled Components
-Axios
+Styled Components e Axios
 
 ## Instruções
 
