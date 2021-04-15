@@ -41,6 +41,10 @@ export const WrapperImage = styled.div`
   display: flex;
   align-items: flex-end;
 
+  img {
+    z-index: 1;
+  }
+
   ${media.lessThan("large")`
     display: none;
   `}
@@ -156,6 +160,34 @@ export const Text3Hide = styled.p`
 
   ${media.lessThan("large")`
     display: block;
+   
+  `}
+`;
+
+export const Union = styled.img`
+  position: absolute;
+  width: 7.375rem;
+  height: 8.375rem;
+  left: 74.5%;
+  top: 19.0625rem;
+  z-index: 0.6;
+
+  ${media.lessThan("large")`
+    display: none;
+   
+  `}
+`;
+
+export const Union2 = styled.img`
+  position: absolute;
+  width: 118px;
+  height: 133px;
+  left: 49.5%;
+  top: 482px;
+  z-index: 0.1;
+
+  ${media.lessThan("large")`
+    display: none;
    
   `}
 `;
