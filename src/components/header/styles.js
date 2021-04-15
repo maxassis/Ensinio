@@ -122,6 +122,7 @@ export const MenuIcon = styled(MenuAltRight)`
   color: #ffffff;
   align-self: center;
   display: none;
+  cursor: pointer;
 
   ${media.lessThan("large")`
     display: grid;

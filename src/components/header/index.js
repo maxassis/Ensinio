@@ -17,7 +17,6 @@ const Header = () => {
           </S.Logo>
           <S.Options>
             <li>
-              {/*  Soluções <img src={Polygon} alt="menu" /> */}
               <Dropdown />
             </li>
             <li>Preços</li>

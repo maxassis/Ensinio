@@ -10,8 +10,6 @@ function DropDownLang() {
   const [isOpen, setIsOpen] = useState(false);
   const [country, setCountry] = useState("PT");
 
-  console.log(country);
-
   return (
     <>
       <S.Wrapper isOpen={isOpen}>
