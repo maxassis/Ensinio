@@ -6,14 +6,16 @@ import Spain from "../../assets/imgs/spain.svg";
 import Path from "../../assets/imgs/path.svg";
 import Polygon from "../../assets/imgs/Polygon.svg";
 
-function DropDownLang() {
+function DropDownLang({ color }) {
   const [isOpen, setIsOpen] = useState(false);
   const [country, setCountry] = useState("PT");
+
+  console.log(color);
 
   return (
     <>
       <S.Wrapper isOpen={isOpen}>
-        <S.Title onClick={() => setIsOpen(!isOpen)}>
+        <S.Title onClick={() => setIsOpen(!isOpen)} color={color}>
           <div>
             {country} <img src={Polygon} alt="poligon" />
           </div>

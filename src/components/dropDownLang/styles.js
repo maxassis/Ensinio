@@ -39,12 +39,12 @@ export const Title = styled.div`
 
   div {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
 
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 105%;
     color: #ffffff;
   }
@@ -59,8 +59,8 @@ export const Content = styled.div`
 `;
 
 export const WrapperMenuFlags = styled.div`
-  width: 138px;
-  height: 144px;
+  width: 8.625rem;
+  height: 9rem;
   background: #ffffff;
 
   display: flex;
@@ -72,8 +72,8 @@ export const Flag = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  width: 138px;
-  height: 48px;
+  width: 8.625rem;
+  height: 3rem;
   cursor: pointer;
 
   :hover {
@@ -92,21 +92,21 @@ export const Flag = styled.div`
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 105%;
     color: #5a5566;
   }
 `;
 
 export const Icon = styled.img`
-  margin-left: 27px;
+  margin-left: 1.6875rem;
   visibility: hidden;
 `;
 
 export const WrapperCountriesBr = styled.div`
   ${({ country }) => css`
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 
     ${Icon} {
       ${country === "PT" && wrapperModifiers.PT()}
@@ -117,7 +117,7 @@ export const WrapperCountriesBr = styled.div`
 export const WrapperCountriesUsa = styled.div`
   ${({ country }) => css`
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 
     ${Icon} {
       ${country === "EN" && wrapperModifiers.EN()}
@@ -128,7 +128,7 @@ export const WrapperCountriesUsa = styled.div`
 export const WrapperCountriesSpa = styled.div`
   ${({ country }) => css`
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
 
     ${Icon} {
       ${country === "ES" && wrapperModifiers.ES()}

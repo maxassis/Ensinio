@@ -43,7 +43,7 @@ export const Wrapper = styled.div`
 
 export const WrapperContent = styled.div`
   box-sizing: border-box;
-  padding: 44px 48px;
+  padding: 2.75rem 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -51,8 +51,8 @@ export const WrapperContent = styled.div`
     "title title"
     "escola social"
     "game mobile";
-  width: 643px;
-  height: 263px;
+  width: 40.1875rem;
+  height: 16.4375rem;
 `;
 
 export const WrapperDescriptions = styled.div`
@@ -81,8 +81,8 @@ export const SubTitle = styled.h4`
 `;
 
 export const Icon = styled.img`
-  width: 30.7104px;
-  height: 31.5696px;
+  width: 1.9194rem;
+  height: 1.9731rem;
 `;
 
 export const WrapperData = styled.div`
@@ -101,7 +101,7 @@ export const Solutions = styled.h1`
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 105%;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -110,11 +110,11 @@ export const Solutions = styled.h1`
 
 export const Li = styled.li`
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 105%;
   color: white;
   opacity: 0.9;
