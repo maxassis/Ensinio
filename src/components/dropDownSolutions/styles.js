@@ -33,6 +33,7 @@ export const Wrapper = styled.div`
   ${({ isOpen }) => css`
     position: relative;
     width: max-content;
+    z-index: 3;
     ${Content} {
       transition: transform 0.2s ease-in, opacity 0.3s ease-in-out;
       ${isOpen && wrapperModifiers.open()}

@@ -42,7 +42,7 @@ export const WrapperImage = styled.div`
   align-items: flex-end;
 
   img {
-    z-index: 1;
+    z-index: 0.5;
   }
 
   ${media.lessThan("large")`
@@ -184,7 +184,7 @@ export const Union2 = styled.img`
   height: 133px;
   left: 49.5%;
   top: 482px;
-  z-index: 0.1;
+  z-index: 0;
 
   ${media.lessThan("large")`
     display: none;
