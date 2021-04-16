@@ -37,6 +37,10 @@ Para rodar o Json Server execute o comando :
 
 `npm run server`
 
+## Deploy
+
+http://ensinio-max.surge.sh
+
 ## Telas
 
 ![](https://images2.imgbox.com/0c/c6/skOfMGmM_o.png)
