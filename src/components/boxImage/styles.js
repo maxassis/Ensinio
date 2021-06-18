@@ -242,6 +242,8 @@ export const PlaylistIcon2 = styled.img`
   position: absolute;
   width: 69.69px;
   opacity: 0.2;
+  right: 1%;
+  top: 8%;
 
   ${media.lessThan('large')`
     display: none;

@@ -1,27 +1,27 @@
-import React, { useEffect, useState } from "react";
-import * as S from "./styles";
-import { Container } from "../container/index";
-import Playlist from "../../assets/imgs/playlists.svg";
-import Rocket from "../../assets/imgs/rocket.svg";
-import Arrow from "../../assets/imgs/arrow.svg";
-import Folder from "../../assets/imgs/folder.svg";
-import Trilhas from "../../assets/imgs/trilhas.svg";
-import LineHorizontal from "../../assets/imgs/lineHorizontal.svg";
-import api from "../../services/api";
+import React, { useEffect, useState } from 'react'
+import * as S from './styles'
+import { Container } from '../container/index'
+import Playlist from '../../assets/imgs/playlists.png'
+import Rocket from '../../assets/imgs/rocket.svg'
+import Arrow from '../../assets/imgs/arrow.svg'
+import Folder from '../../assets/imgs/folder.png'
+import Trilhas from '../../assets/imgs/trilhas.png'
+import LineHorizontal from '../../assets/imgs/lineHorizontal.svg'
+import api from '../../services/api'
 
 function BoxDescription() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([])
 
   useEffect(() => {
     api
-      .get("items")
+      .get('items')
       .then((response) => setData(response.data))
       .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-      });
-  }, []);
+        console.error('ops! ocorreu um erro' + err)
+      })
+  }, [])
 
-  console.log(data);
+  console.log(data)
 
   return (
     <S.Wrapper>
@@ -52,7 +52,7 @@ function BoxDescription() {
                 <S.Title>{dt.title}</S.Title>
                 <p>{dt.description}</p>
               </S.Card>
-            );
+            )
           })}
         </S.WrapperCards>
         <S.Footer>
@@ -67,7 +67,7 @@ function BoxDescription() {
         </S.Footer>
       </Container>
     </S.Wrapper>
-  );
+  )
 }
 
-export default BoxDescription;
+export default BoxDescription
