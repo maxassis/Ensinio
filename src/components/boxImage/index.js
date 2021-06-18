@@ -8,6 +8,7 @@ import Union from '../../assets/imgs/Union.svg'
 import Union2 from '../../assets/imgs/Union2.svg'
 import Devices from '../../assets/imgs/devices.png'
 import Certified from '../../assets/imgs/icon-certified.png'
+import Playlist from '../../assets/imgs/icon-playlists.png'
 
 const BoxImage = () => {
   return (
@@ -16,11 +17,9 @@ const BoxImage = () => {
 
       <Container>
         <S.WrapperInformations>
-          <S.CertifiedIcon
-            src={Certified}
-            alt="playlist icon"
-            style={{ position: 'absolute' }}
-          />
+          <S.CertifiedIcon src={Certified} alt="certified icon" />
+          <S.PlaylistIcon src={Playlist} alt="playlist icon" />
+          <S.PlaylistIcon2 src={Playlist} alt="playlist icon" />
           <S.WrapperTexts>
             <S.Text1>
               <img

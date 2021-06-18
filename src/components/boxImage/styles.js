@@ -218,12 +218,37 @@ export const CertifiedIcon = styled.img`
   position: absolute;
   right: 54.5%;
   top: 10%;
+  opacity: 0.3;
 
   ${media.lessThan('large')`
     display: none;
    
   `}
 `
+export const PlaylistIcon = styled.img`
+  position: absolute;
+  width: 68.75px;
+  left: 1%;
+  top: 8%;
+  opacity: 0.2;
+
+  ${media.lessThan('large')`
+    display: none;
+   
+  `}
+`
+
+export const PlaylistIcon2 = styled.img`
+  position: absolute;
+  width: 69.69px;
+  opacity: 0.2;
+
+  ${media.lessThan('large')`
+    display: none;
+   
+  `}
+`
+
 export const Elipse = styled.div`
   position: absolute;
   width: 658.53px;
