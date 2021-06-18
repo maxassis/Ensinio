@@ -1,25 +1,28 @@
-import styled, { css } from "styled-components";
-import media from "styled-media-query";
-import { MenuAltRight } from "@styled-icons/boxicons-regular/MenuAltRight";
+import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
+import { MenuAltRight } from '@styled-icons/boxicons-regular/MenuAltRight'
 
 export const Wrapper = styled.div`
   width: 100%;
   height: 5.5rem;
   background: rgba(0, 0, 0, 0.03);
-`;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+`
 
 export const WrapperMenu = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 5.5rem;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: flex;
     height: 5.5rem;
     justify-content: space-between;
     
   `}
-`;
+`
 
 export const Logo = styled.div`
   display: flex;
@@ -27,7 +30,7 @@ export const Logo = styled.div`
   img {
     width: 7.5625rem;
   }
-`;
+`
 
 export const Options = styled.ul`
   display: flex;
@@ -58,11 +61,11 @@ export const Options = styled.ul`
     gap: 1.25rem;
   }
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: none;
     
   `}
-`;
+`
 
 export const Login = styled.div`
   display: flex;
@@ -77,10 +80,10 @@ export const Login = styled.div`
     gap: 1.25rem;
   }
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: none;
   `}
-`;
+`
 
 export const Button = styled.button`
   width: 10rem;
@@ -107,7 +110,7 @@ export const Button = styled.button`
     transition-delay: 0.05s;
     border-color: #333333;
   }
-`;
+`
 
 export const WrapperOption1 = styled.div`
   gap: 0.6563rem;
@@ -128,7 +131,7 @@ export const WrapperOption1 = styled.div`
       cursor: pointer;
     }
   }
-`;
+`
 
 export const WrapperOption2 = styled.div`
   display: flex;
@@ -140,7 +143,7 @@ export const WrapperOption2 = styled.div`
   font-size: 0.9375rem;
   line-height: 105%;
   color: #ffffff;
-`;
+`
 
 export const MenuIcon = styled(MenuAltRight)`
   width: 2.5rem;
@@ -149,14 +152,14 @@ export const MenuIcon = styled(MenuAltRight)`
   display: none;
   cursor: pointer;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: grid;
   `}
-`;
+`
 
 export const Img = styled.img`
   margin-left: 0.5rem;
-`;
+`
 
 ///// MENU FULL
 
@@ -176,11 +179,11 @@ export const MenuFull = styled.div`
     opacity: 1;
     pointer-events: none;
     opacity: ${isOpen ? 1 : 0};
-    pointer-events: ${isOpen ? "all" : "none"};
+    pointer-events: ${isOpen ? 'all' : 'none'};
     padding: 1.875rem;
     z-index: 1;
   `}
-`;
+`
 
 export const ContainerMenus = styled.div`
   display: flex;
@@ -189,7 +192,7 @@ export const ContainerMenus = styled.div`
   flex: 1;
   align-items: center;
   justify-content: center;
-`;
+`
 
 export const WrapperIcon = styled.div`
   display: flex;
@@ -202,7 +205,7 @@ export const WrapperIcon = styled.div`
   span {
     font-size: 1.5625rem;
   }
-`;
+`
 
 export const Span = styled.span`
   cursor: pointer;
@@ -216,4 +219,4 @@ export const Span = styled.span`
   :hover {
     color: #00e1e7;
   }
-`;
+`

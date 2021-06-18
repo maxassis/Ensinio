@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { Container } from "../container";
-import * as S from "./styles";
-import Logo from "../../assets/imgs/logo.svg";
-import Group from "../../assets/imgs/Group.svg";
-import Line from "../../assets/imgs/Line.svg";
-import Dropdown from "../dropDownSolutions/index";
-import DropDownLang from "../dropDownLang";
-import { Close as CloseIcon } from "@styled-icons/material-outlined/Close";
-import Polygon from "../../assets/imgs/Polygon.svg";
+import React, { useState } from 'react'
+import { Container } from '../container'
+import * as S from './styles'
+import Logo from '../../assets/imgs/logo.svg'
+import Group from '../../assets/imgs/Group.svg'
+import Line from '../../assets/imgs/Line.svg'
+import Dropdown from '../dropDownSolutions/index'
+import DropDownLang from '../dropDownLang'
+import { Close as CloseIcon } from '@styled-icons/material-outlined/Close'
+import Polygon from '../../assets/imgs/Polygon.svg'
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <S.Wrapper>
@@ -62,7 +62,7 @@ const Header = () => {
         </S.ContainerMenus>
       </S.MenuFull>
     </S.Wrapper>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

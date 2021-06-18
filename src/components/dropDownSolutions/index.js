@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import * as S from "./styles";
-import School from "../../assets/imgs/school.svg";
-import Social from "../../assets/imgs/social.svg";
-import Game from "../../assets/imgs/game.svg";
-import Mobile from "../../assets/imgs/mobile.svg";
-import Polygon from "../../assets/imgs/Polygon.svg";
+import React, { useState } from 'react'
+import * as S from './styles'
+import School from '../../assets/imgs/school.svg'
+import Social from '../../assets/imgs/social.svg'
+import Game from '../../assets/imgs/game.svg'
+import Mobile from '../../assets/imgs/mobile.svg'
+import Polygon from '../../assets/imgs/Polygon.svg'
 
 function Dropdown() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
@@ -55,7 +55,7 @@ function Dropdown() {
         </S.Content>
       </S.Wrapper>
     </>
-  );
+  )
 }
 
-export default Dropdown;
+export default Dropdown

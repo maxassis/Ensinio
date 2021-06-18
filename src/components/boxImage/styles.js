@@ -1,15 +1,17 @@
-import styled from "styled-components";
-import media from "styled-media-query";
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   width: 100%;
   height: 43.75rem;
   background: linear-gradient(259.95deg, #41b5d9 2.25%, #5f41d9 100.27%);
+  display: flex;
+  align-items: flex-end;
 
-  ${media.lessThan("small")`
+  ${media.lessThan('small')`
   height: 47.5rem;
   `}
-`;
+`
 
 export const WrapperInformations = styled.div`
   height: 38.25rem;
@@ -17,14 +19,14 @@ export const WrapperInformations = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 
-  ${media.lessThan("small")`
+  ${media.lessThan('small')`
   padding-top: 2.1875rem;
   `}
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
   grid-template-columns: 1fr;
   `}
-`;
+`
 
 export const WrapperTexts = styled.div`
   display: flex;
@@ -32,23 +34,24 @@ export const WrapperTexts = styled.div`
   justify-content: center;
   gap: 2.75rem;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
   align-items: center;
   `}
-`;
+`
 
 export const WrapperImage = styled.div`
   display: flex;
   align-items: flex-end;
+  position: relative;
 
   img {
     z-index: 0.5;
   }
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: none;
   `}
-`;
+`
 
 export const Text1 = styled.h1`
   font-family: Open Sans;
@@ -56,12 +59,14 @@ export const Text1 = styled.h1`
   font-weight: 600;
   font-size: 1rem;
   line-height: 105%;
+  display: flex;
+  align-items: center;
 
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #ffffff;
   opacity: 0.75;
-`;
+`
 
 export const Text2 = styled.p`
   font-family: Inter;
@@ -72,10 +77,10 @@ export const Text2 = styled.p`
   letter-spacing: -0.03em;
   color: #ffffff;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: none;
   `}
-`;
+`
 
 export const Text3 = styled.p`
   font-family: Inter;
@@ -86,10 +91,10 @@ export const Text3 = styled.p`
   color: #ffffff;
   opacity: 0.9;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: none;
   `}
-`;
+`
 
 export const WrapperButtons = styled.div`
   display: flex;
@@ -97,10 +102,10 @@ export const WrapperButtons = styled.div`
   gap: 2.5rem;
   margin-top: 0.25rem;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     flex-direction: column;
   `}
-`;
+`
 
 export const FirstButton = styled.button`
   width: 11.5rem;
@@ -125,7 +130,7 @@ export const FirstButton = styled.button`
     transition: all 0.5s ease-in;
     transition-delay: 0.05s;
   }
-`;
+`
 
 export const WatchVideo = styled.a`
   display: flex;
@@ -148,7 +153,7 @@ export const WatchVideo = styled.a`
       cursor: pointer;
     }
   }
-`;
+`
 
 export const Text2Hide = styled.p`
   display: none;
@@ -160,10 +165,10 @@ export const Text2Hide = styled.p`
   letter-spacing: -0.03em;
   color: #ffffff;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: block;
   `}
-`;
+`
 
 export const Text3Hide = styled.p`
   display: none;
@@ -175,36 +180,61 @@ export const Text3Hide = styled.p`
   color: #ffffff;
   opacity: 0.9;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: block;
    
   `}
-`;
+`
 
 export const Union = styled.img`
   position: absolute;
   width: 7.375rem;
   height: 8.375rem;
-  left: 74.5%;
-  top: 19.0625rem;
+  left: 53%;
+  top: 14.5rem;
   z-index: 0.6;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: none;
    
   `}
-`;
+`
 
 export const Union2 = styled.img`
   position: absolute;
   width: 118px;
   height: 133px;
-  left: 49.5%;
-  top: 482px;
+  left: -0.9%;
+  top: 395px;
   z-index: 0;
 
-  ${media.lessThan("large")`
+  ${media.lessThan('large')`
     display: none;
    
   `}
-`;
+`
+
+export const CertifiedIcon = styled.img`
+  position: absolute;
+  right: 54.5%;
+  top: 10%;
+
+  ${media.lessThan('large')`
+    display: none;
+   
+  `}
+`
+export const Elipse = styled.div`
+  position: absolute;
+  width: 658.53px;
+  height: 658.53px;
+  border-radius: 50%;
+  background: linear-gradient(
+    139.56deg,
+    #fff -4.57%,
+    rgba(255, 255, 255, 0) 82.11%
+  );
+  opacity: 0.1;
+  top: 22%;
+  right: 4%;
+`
