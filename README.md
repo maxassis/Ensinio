@@ -43,10 +43,9 @@ http://ensinio-max.surge.sh
 
 ## Telas
 
-[](https://images2.imgbox.com/0c/c6/skOfMGmM_o.png)
 
-[](https://images2.imgbox.com/ad/2a/VnIBT3yN_o.png)
+![](https://images2.imgbox.com/0c/c6/skOfMGmM_o.png)
 
-[](https://images2.imgbox.com/34/f2/sWJykSbn_o.png)
+![](https://images2.imgbox.com/34/f2/sWJykSbn_o.png)
 
-[](https://images2.imgbox.com/00/fd/shbuCTKU_o.png)
+![](https://images2.imgbox.com/00/fd/shbuCTKU_o.png)
